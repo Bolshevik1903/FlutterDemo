@@ -14,6 +14,7 @@ class TodoItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextField(
+            controller: TextEditingController(text: newTask),
             decoration: const InputDecoration(
               border: OutlineInputBorder(),
               labelText: 'New Task',
